@@ -61,7 +61,7 @@ const Form3 = () => {
     <div className="container">
       <div className="row">
         <div className=" col-10 col-md-4 m-auto rounded shadow mt-5">
-          <h1 className="text-center my-2">Step 1</h1>
+          <h1 className="text-center my-2">Step 3</h1>
           {/* Creating Form */}
           <Form
             noValidate
@@ -136,7 +136,7 @@ const Form3 = () => {
             </div>
           </Form>
           <ToastContainer
-            position="top-right"
+            position="top-left"
             autoClose={3500}
             hideProgressBar={false}
             newestOnTop={false}

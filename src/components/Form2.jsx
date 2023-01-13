@@ -16,7 +16,8 @@ const Form2 = () => {
 
   function HandleSave() {
     setValidate(true);
-    if (ValidateName(currentState.firstName && ValidateAddress(currentState.address))) {
+    if (ValidateName(currentState.firstName) && ValidateAddress(currentState.address)) {
+      console.log(ValidateAddress(currentState.address));
       setData({
         ...data,
         firstName: currentState.firstName,
@@ -32,7 +33,8 @@ const Form2 = () => {
 
     setFormState({
       ...formState,
-      '2': { ...formState['2'], state: false, '3': { ...formState['3'], state: false } },
+      '2': { ...formState['2'], state: false },
+      '3': { ...formState['3'], state: false },
     });
     return false;
   }
