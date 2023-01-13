@@ -5,13 +5,10 @@ import faker from 'faker';
 import { v4 as uuid } from 'uuid';
 
 const API_URL = 'https://codebuddy.review';
-
 const isPrime = (n, i = 2) => {
   if (n === 0 || n === 1) return false;
   if (n === i) return true;
-
   if (n % i === 0) return false;
-
   return isPrime(n, i + 1);
 };
 
@@ -33,9 +30,8 @@ const handlers = [
       lastName: faker.name.lastName(),
       writeup: faker.lorem.words(16),
       image: faker.image.food(640, 400),
-      avatar: faker.image.avatar(),
+      avatar: faker.image.food(),
     }));
-
     return res(
       ctx.status(200),
       ctx.json({
@@ -45,7 +41,6 @@ const handlers = [
       }),
     );
   }),
-
   rest.get(`${API_URL}/seats`, (req, res, ctx) => {
     let seatNumber = 1;
     const seats = Array.from({ length: +req.url.searchParams.get('count') ?? 0 }, (_, i) => ({
@@ -58,7 +53,6 @@ const handlers = [
         seatNumber: seatNumber++,
       })),
     })).reverse();
-
     return res(
       ctx.status(200),
       ctx.json({

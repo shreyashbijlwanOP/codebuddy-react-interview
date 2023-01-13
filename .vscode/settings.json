@@ -26,5 +26,6 @@
     "Roadmap",
     "Stylelint",
     "toastify"
-  ]
+  ],
+  "deepscan.enable": true
 }

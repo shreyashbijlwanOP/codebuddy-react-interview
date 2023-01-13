@@ -1,3 +1,29 @@
 body {
   font-size: 16px;
+  
+}
+
+.avatar{
+width: 60px;
+height: 60px;
+border-radius: 60px;
+object-fit: contain;
+border: 2px solid white;
+}
+.stage{
+  width: 60px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: lightgrey;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+.stage-box{
+  display: flex;
+  justify-content: space-between;
 }
