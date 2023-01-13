@@ -1,5 +1,6 @@
 import { AiOutlineCheck } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 import { useFormData } from '../context/FormContext';
 
 const Steps = props => {
@@ -19,6 +20,10 @@ const Steps = props => {
       {formState[step].state ? <AiOutlineCheck /> : step}
     </button>
   );
+};
+
+Steps.propsType = {
+  props: PropTypes.object.isRequired,
 };
 
 export default Steps;

@@ -1,4 +1,5 @@
 import { Card } from 'react-bootstrap';
+import { PropTypes } from 'prop-types';
 
 const Cards = ({ elem }) => {
   const { firstName, lastName, writeup, image, avatar } = elem;
@@ -18,6 +19,10 @@ const Cards = ({ elem }) => {
       </Card>
     </div>
   );
+};
+
+Cards.propTypes = {
+  elem: PropTypes.object.isRequired,
 };
 
 export default Cards;

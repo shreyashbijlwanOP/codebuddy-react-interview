@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 import { useFormData } from '../context/FormContext';
 
 const ProtectedRoute = ({ children }) => {
@@ -13,6 +14,10 @@ const ProtectedRoute = ({ children }) => {
     }
   }, []);
   return children;
+};
+
+ProtectedRoute.propsType = {
+  children: PropTypes.object.isRequired,
 };
 
 export default ProtectedRoute;
