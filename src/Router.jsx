@@ -44,7 +44,9 @@ const Router = () => (
           path="3"
           element={
             <Suspense fallback={<Fallback />}>
-              <Form3 />
+              <ProtectedRoute>
+                <Form3 />
+              </ProtectedRoute>
             </Suspense>
           }
         />
