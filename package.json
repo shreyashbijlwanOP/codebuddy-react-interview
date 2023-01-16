@@ -1,13 +1,10 @@
 {
   "name": "codebuddy-react-interview",
   "version": "0.1.0",
-  "homepage": "https://shreyashbijlwanOP.github.io/codebuddy-react-interview",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./ --ext .js,.jsx",
@@ -39,7 +36,6 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "gh-pages": "^4.0.0",
     "prettier": "^2.3.2"
   },
   "browserslist": {
